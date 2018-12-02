@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>미세먼지</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<style>
+	#sky{position: absolute; margin: auto; left: -1px; top: 0px;
+		animation: arrow 2s forwards;}
+	#ground{position: absolute; left : -1px; top: 356.2px;
+		animation: arrow 2s forwards;}
+	#factory1{position: absolute; margin: auto; left: 0px; top: 174px;
+		animation: intro 2s forwards;}
+	#factory2{position: absolute; margin: auto; left: 408px; top: 50px;
+		animation: intro 3s forwards;}
+	#factory3{position: absolute; margin: auto; left: 1035px; top: 209px;
+		animation: intro 4s forwards;}
+	#road{position: absolute; margin: auto; left: 387px; top: 500px;
+		animation: intro 5s forwards;}
+	#car1{position: absolute; margin: auto; left: 610px; top: 572px;
+		animation: intro 6s forwards;}
+	#car2{position: absolute; margin: auto; left: 747px; top: 476px;
+		animation: intro 7s forwards;}
+	#화살표{position: absolute; margin: auto; left: 860px; top: 530px;
+		animation: intro 8s forwards;}
+
+	@keyframes intro{
+			0%{opacity:0;}
+			50%{opacity: 0;}
+			100%{opacity: 1;}}
+	@keyframes arrow{
+			0%{opacity: 0;}
+			100%{opacity: 1;}}		
+	</style>
+</head>
+<body>
+	<img src="sky.png" id="sky">
+
+	<img src="ground.png" id="ground">
+
+	<img src="road.png" id="road">
+
+	<img src="factory2.png" id="factory2">
+
+	<img src="factory3.png" id="factory3">
+
+	<img src="factory1.png" id="factory1">
+
+	<img src="car1.png" id="car1">
+
+	<img src="car2.png" id="car2">
+
+	<img src="화살표.gif" id="화살표">
+
+
+
+	<script type="text/javascript">
+		road.onclick = function(){
+			road.setAttribute("src","도로.gif");
+			road.style.left = "0px";
+			road.style.top = "0px";
+			화살표.style.left = "722px";
+			화살표.style.top = "-20px";
+		}
+
+		factory2.onclick = function(){
+			factory2.setAttribute("src","공장2.gif");
+			factory2.style.left = "0px";
+			factory2.style.top = "0px";
+			화살표.style.left = "1280px";
+			화살표.style.top = "130px";
+		}
+
+		factory3.onclick = function(){
+			factory3.setAttribute("src","공장3.gif");
+			factory3.style.left = "0px";
+			factory3.style.top = "0px";
+			화살표.style.left = "350px";
+			화살표.style.top = "190px";
+		}
+
+		factory1.onclick = function(){
+			factory1.setAttribute("src","공장1.gif");
+			factory1.style.left = "0px";
+			factory1.style.top = "0px";
+			화살표.style.left = "640px";
+			화살표.style.top = "490px";
+		}
+
+		car1.onclick = function(){
+			car1.setAttribute("src","차1.gif");
+			car1.style.left = "0px";
+			car1.style.top = "0px";
+			화살표.style.left = "760px";
+			화살표.style.top = "400px";
+
+
+		}
+
+		car2.onclick = function(){
+			car2.setAttribute("src","차2.gif");
+			car2.style.left = "0px";
+			car2.style.top = "0px";
+			화살표.style.top = "-100px";
+		}
+
+	</script>
+
+
+</body>
+</html>
